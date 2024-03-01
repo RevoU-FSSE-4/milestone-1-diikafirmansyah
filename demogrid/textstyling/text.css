@@ -1,0 +1,14 @@
+h2 {
+  text-align: center;
+  color: rgb(156, 19, 19);
+  font-weight: bold;
+  font-style: normal;
+  word-spacing: 2px;
+}
+
+body {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
