@@ -48,7 +48,7 @@ ul {
 }
 
 h1 {
-  /* text-align: center; */
+  text-shadow: 2px 2px 5px whitesmoke;
   font-size: 2.75rem;
   color: white;
   padding-left: 3%;
@@ -70,8 +70,8 @@ img {
   height: 500px;
   width: 900px;
   border-radius: 2%;
-  border-left: 1%;
-  padding-left: 2%;
+  border-left: 2%;
+  padding-left: 3%;
 }
 h2 {
   text-align: left;
@@ -168,15 +168,73 @@ h2 {
   position: relative;
 }
 
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+footer {
+  background-color: black;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 70px 30px 20px;
+
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.social-icons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.social-icons a:hover{
+  background-color: black;
+  transition: 0.5s;
+
+}
+
+.social-icons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+.footernav {
+  margin: 30px 0;
+}
+.footernav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footernav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
 
 
-
-
-
- @media screen and (max-width: 700px ;) {
+ @media screen and (max-width: 700px ) {
   .card {
     width: 20em;
     display: block;
     margin: 1em;
+  }
+  .container-card {
+    grid-template-columns: repeat(1,1fr);
   }
 }
